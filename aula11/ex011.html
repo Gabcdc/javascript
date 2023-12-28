@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Países</title>
+</head>
+<body>
+    <h1>Seleção dos Brasileiro</h1>
+    Digite su pais para saber se vc é Brasileiro:
+    <input type="text" name="pais" id="ipais">
+    <input type="button" value="Verificar " onclick="Verificar()">
+    <div id="res"></div>
+    <script>
+        function Verificar(){
+            var pais = window.document.getElementById('ipais')
+            var res = window.document.getElementById('res')
+            var iden= String (pais.value)
+            res.innerHTML = `você é do ${iden} `
+            if(iden == 'Brasil'){
+                res.innerHTML += `você é Brasileiro`
+            }
+            else{
+                res.innerHTML +='Você é estrangeiro'
+            }
+        }
+
+    </script>
+    
+</body>
+</html>
