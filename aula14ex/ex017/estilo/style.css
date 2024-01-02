@@ -16,9 +16,7 @@ border-radius: 10px;
 box-shadow:5px 5px 3px rgba(0, 0, 0, 0.353);
 margin: auto;
 }
-section > div{
-    text-align: center;
-}
+
 footer{
     text-align: center;
 color: white;
